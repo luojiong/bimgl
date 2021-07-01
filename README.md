@@ -55,5 +55,3 @@ BIMGL.init(element,options);
 - **`clearComponentsColorById`** _([ componentsId ]) 通过构件id清除构件着色
 - **`setWorldPosition`** _(componentsId, element, position ? ) 通过构件id给模型加标签
 
-### Emai
-619067833@qq.com
