@@ -7,6 +7,8 @@ The project is a web GL rendering library, with BIM life cycle related functions
 ### Installation
 ```javascript
  npm install bimgl
+      or
+ yarn add bimgl
 ```
 
 ### Example
