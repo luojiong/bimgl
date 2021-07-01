@@ -1,26 +1,30 @@
-# bimgl.js [![npm version](https://img.shields.io/npm/v/bimgl.svg?sanitize=true)](https://www.npmjs.com/package/bimgl)
+# bimgl.js  [![npm version](https://img.shields.io/npm/v/bimgl.svg?sanitize=true)](https://www.npmjs.com/package/bimgl)
 
 ### JavaScript 3D library ##
 
 The project is a web GL rendering library, with BIM life cycle related functions and operations
 
+### Installation
+```javascript
+ npm install bimgl
+```
 
 ### Example
 ```html
 <div id='viewer'></div>
 ```
 ```javascript
-import GLBIM from "GLBIM.js";
+import BIMGL from "bimgl";
 
-GLBIM.init(document.getElementById('viewer'),{
+BIMGL.init(document.getElementById('viewer'),{
     uri: `modelURL`,
 })
 ```
 ### init
 ```javascript
-import GLBIM from "GLBIM.js";
+import BIMGL from "BIMGL";
 
-GLBIM.init(element,options);
+BIMGL.init(element,options);
 ```
 
 ### Options
