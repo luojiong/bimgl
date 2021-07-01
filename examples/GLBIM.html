@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GLBIM</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../src/style/gl-bim.css">
+    <style>
+        html,body,div{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #viewer{
+            box-sizing: border-box;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .title{
+            width: 100px;
+            height: 40px;
+            color: white;
+            border: 1px solid red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="viewer"></div>
+</body>
+<script type="module">
+    import GLBIM from "../src/GLBIM.js";
+    window.gl = new GLBIM();
+    gl.init(document.getElementById('viewer'),{
+        uri:'./models/znzx.fbx',
+        loadingImage: '/src/style/loading.gif',
+        antialias:true,
+        animation(){
+            gl.render();
+        }
+    })
+    gl.onSelect = function (value){
+        if(value.object){
+            gl.setWorldPosition(value.object.id,label());
+        }
+    }
+    gl.onload = function (){
+        gl.setComponentsColorById(['CDBD61DE-E96F-4350-88CF-9A4A64459DA8'],new gl.Color(0xc8ebdf))
+    }
+    gl.onStart = function (a){
+        console.log(a)
+    }
+    gl.onError = function (error){
+        console.log(error)
+    }
+    gl.onProgress = (value)=>{
+        // console.log(value)
+    }
+    function label(){
+        let div = document.createElement('div');
+        div.className = 'title';
+        div.textContent = Date.now();
+        return div;
+    }
+    let el = document.getElementById('viewer');
+    window.onresize = function (){
+        gl.resize();
+    }
+</script>
+</html>
