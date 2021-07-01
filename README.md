@@ -15,16 +15,16 @@ The project is a web GL rendering library, with BIM life cycle related functions
 ```
 ```javascript
 import BIMGL from "bimgl";
-
-BIMGL.init(document.getElementById('viewer'),{
+const bimgl = new BIMGL();
+bimgl.init(document.getElementById('viewer'),{
     uri: `modelURL`,
 })
 ```
 ### init
 ```javascript
 import BIMGL from "BIMGL";
-
-BIMGL.init(element,options);
+const bimgl = new BIMGL();
+bimgl.init(element,options);
 ```
 
 ### Options
