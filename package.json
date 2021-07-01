@@ -1,5 +1,5 @@
 {
-  "name": "GLBIM",
+  "name": "bimgl",
   "version": "1.0.0",
   "description": "webgl bim model",
   "main": "/src/GLBIM.js",
