@@ -2,7 +2,7 @@
   "name": "glbim",
   "version": "1.0.0",
   "description": "webgl bim model",
-  "main": "rollup.config.js",
+  "main": "/src/GLBIM.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently --names \"ROLLUP,HTTP\" -c \"bgBlue.bold,bgGreen.bold\" \"rollup -c rollup.config.js -w -m --environment BUILD:dev inline\" \"servez -p 8080\"",
