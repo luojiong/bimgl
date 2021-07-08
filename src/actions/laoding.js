@@ -6,13 +6,13 @@ export function showLoading (url){
         dom.appendChild(img);
     }
     let span = document.createElement('span');
-    span.className = 'glbim-progress'
+    span.className = 'bimgl-progress'
     dom.appendChild(span);
-    dom.className = 'glbim-loading';
+    dom.className = 'bimgl-loading';
 
-    document.querySelector('.glbim-container').appendChild(dom);
+    document.querySelector('.bimgl-container').appendChild(dom);
 }
 export function hideLoading (){
-    let loadingEl =  document.querySelector('.glbim-loading');
-    document.querySelector('.glbim-container').removeChild(loadingEl);
+    let loadingEl =  document.querySelector('.bimgl-loading');
+    document.querySelector('.bimgl-container').removeChild(loadingEl);
 }

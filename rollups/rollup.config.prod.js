@@ -27,17 +27,17 @@ const babelrc = {
     ]
 };
 const configProd =   {
-    input:"src/GLBIM.js",
+    input:"src/BIMGL.js",
     output: [
         {
-            file: path.resolve(__dirname,'build/GLBIM.js'),
+            file: path.resolve(__dirname,'build/bimgl.js'),
             format: 'umd',
-            name:"GLBIM"
+            name:"BIMGL"
         },
         {
-            file: path.resolve(__dirname,'build/GLBIM.min.js'),
+            file: path.resolve(__dirname,'build/bimgl.min.js'),
             format: 'umd',
-            name:"GLBIM",
+            name:"BIMGL",
             plugins:[terser()]
         }
     ],
