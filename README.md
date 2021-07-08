@@ -12,6 +12,8 @@ The project is a web GL rendering library, with BIM life cycle related functions
 ```
 
 ### Example
+
+### docs address [文档地址](https://luojiong.github.io/bimgl-docs/)
 ```html
 <div id='viewer'></div>
 ```
