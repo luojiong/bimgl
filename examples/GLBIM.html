@@ -35,12 +35,12 @@
 <div id="viewer"></div>
 </body>
 <script type="module">
-    import GLBIM from "../src/BIMGL.js";
-    window.gl = new GLBIM();
+    import BIMGL from "../src/BIMGL.js";
+    window.gl = new BIMGL();
     gl.init(document.getElementById('viewer'),{
         // uri:'./models/yy/医院整体.fbx',
         uri:'./models/1场地.fbx',
-        sRGBEncoding: true,
+        sRGBEncoding: false,
         loadingImage: '/src/style/loading.gif',
         antialias:true,
         animation(){
